@@ -104,7 +104,7 @@ export default function Card() {
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           className="
             absolute -top-24 left-1/2 -translate-x-1/2
-            w-[220px] z-20 mix-blend-lighten
+            w-[220px] z-32 mix-blend-lighten 
           "
           style={{ filter: `drop-shadow(0 30px 60px ${glow})` }}
         />
@@ -113,7 +113,7 @@ export default function Card() {
         <div
           className="absolute bottom-16 w-full px-5 py-5
           bg-white/5 backdrop-blur-xl
-          border-t border-white/10"
+          border-t border-white/10-" 
         >
           <h2 className="text-xl text-white font-semibold text-center capitalize">
             {pokemon.name}
@@ -125,7 +125,7 @@ export default function Card() {
                 key={t}
                 className="px-3 py-1 text-xs rounded-full
                 bg-white/10 border border-white/20
-                text-white capitalize"
+                text-white capitalize" 
               >
                 {t}
               </span>
